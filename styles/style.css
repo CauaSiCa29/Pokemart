@@ -2,7 +2,9 @@
     /*header*/
     --cor-nome-da-pagina: yellow;
     --cor-da-fonte: white;
-    --cor-do-cabecalho: #050000bf;
+
+    /*body*/
+    --cor-preta: #000000bf;
 
     /*rodapé*/
     --cor-do-bk-rodape: rgba(114, 15, 18, 0.51);
@@ -31,7 +33,7 @@ body{
 .cabecalho_menu{
     display: flex;
     justify-content: space-between;
-    background-color: var(--cor-do-cabecalho);
+    background-color: var(--cor-preta);
 }
 
 .cabecalho_titulo{
@@ -63,12 +65,11 @@ body{
     flex-direction: column;
     justify-content: space-between;
     gap: 20px;
-    background-color: #050000bf;
+    background-color: var(--cor-preta);
     opacity: 82%;
     width: 20%;
-    margin-top: 15%;
-    margin-bottom: 15%;
-    border: 2px black solid;
+    margin: 15% 0% 15% 0%;
+    border: 2px var(--cor-preta) solid;
     border-radius: 5%;  
 }
 

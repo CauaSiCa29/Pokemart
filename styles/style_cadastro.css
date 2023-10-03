@@ -4,6 +4,9 @@
     --cor-da-fonte: white;
     --cor-do-cabecalho: #050000bf;
 
+    /*Body*/
+    --cor-do-bk-principal: #720F12; 
+
     /*rodapé*/
     --cor-do-bk-rodape: rgba(114, 15, 18, 0.51);
     --cor-da-fonte-rodape: #000;
@@ -58,9 +61,19 @@ body{
     
 }
 
-.principal_cadastro{
-    background-color: #ffffff;
+.principal{
+    display: grid;
+    place-items: center; /* Centraliza vertical e horizontalmente */
 }
+
+.principal_cadastro {
+    background-color: var(--cor-do-bk-principal);
+    margin: 10% 0% 10% 0%;
+    width: 70%;
+    height: 50vh; /* Define a altura como 50% da altura da janela de visualização (viewport height) */
+    display: flex;
+}
+
 
 
 .rodape{
