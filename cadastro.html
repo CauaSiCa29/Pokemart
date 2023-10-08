@@ -21,10 +21,45 @@
         </nav>
     </header>
     <main class="principal">
+        
         <div class="principal_cadastro">
-            <h1 class="principal_titulo">Informe seus dados para a criação da conta:</h1>
+            <div class="principal_cadastro_titulo">
+                <h1 class="cadastro_titulo"> Informe seus dados para a criação da conta: </h1>
+            
+            </div>
 
+            <form class="form">
+                <div class="form_conteudo">
+                    <div class="form_nome">
+                        <label> Infomações pessoais: </label>
+                        <div class="nome">
+                            <input class="campo_de_preenchimento" type="text" name="nome" id="nome" placeholder="Ex: João da Silva">
+                        </div>
+                    </div>
+
+                    <div class="form_contato">
+                        <label> Formas de contato: </label>
+                        <div class="contato">
+                            <input class="campo_de_preenchimento" type="email" name="email" id="email" placeholder="Ex: Joao@gmail.com">
+                            <input class="campo_de_preenchimento" type="email" name="email" id="repetirEmail" placeholder="Repita seu email">
+                            <input class="campo_de_preenchimento" type="tel" name="numero" id="numero" placeholder="Ex:(81) 9xxxx-xxxx">
+                        </div>
+                    </div>
+                    
+                    <div class="form_senha">
+                        <label> Senha: </label>
+                        <div class="senha">
+                            <input class="campo_de_preenchimento" type="password" name="senha" id="senha" placeholder="Digite sua Senha">
+                            <input class="campo_de_preenchimento" type="password" name="repetirSenha" id="repetirSenha" placeholder="Repita sua Senha">
+                        </div>
+                    </div>
+                </div>
+
+                <button type="submit" class="form_botao" id="botao"><img src="./assets/Icones/pokebola_fechada.png" alt="pokebola_fechada" class="pokebola"></button>
+
+            </form>
         </div>
+
     </main>
     <footer class="rodape">
         <div class="rodape_redes">
@@ -45,11 +80,12 @@
                 </div>
                 <div>
                     <p> Suporte </p>
-                    <p> Dúvidas frequentes </p>
+                    <p> Rastreiamento de pedidos </p>
                 </div>    
             </div>
         </div>
     </footer>
     
+    <script src="main.js"></script>
 </body>
 </html>

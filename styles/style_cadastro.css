@@ -5,11 +5,11 @@
     --cor-do-cabecalho: #050000bf;
 
     /*Body*/
-    --cor-do-bk-principal: #720F12; 
+    --cor-do-bk-principal: rgba(114, 15, 18, 72%); 
 
     /*rodapé*/
     --cor-do-bk-rodape: rgba(114, 15, 18, 0.51);
-    --cor-da-fonte-rodape: #000;
+    --cor-preta: #000;
 }
 
 *{
@@ -69,16 +69,91 @@ body{
 .principal_cadastro {
     background-color: var(--cor-do-bk-principal);
     margin: 10% 0% 10% 0%;
-    width: 70%;
-    height: 50vh; /* Define a altura como 50% da altura da janela de visualização (viewport height) */
+    width: 80%;
+    height: 80vh; /* Define a altura como 50% da altura da janela de visualização (viewport height) */
     display: flex;
+    border: 2px var(--cor-preta) solid;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
+.cadastro_titulo{
+    margin: 1.5rem 0rem 1.5rem 1.5rem;
+}
 
+.form{
+    display: grid;
+    place-items: center;
+    gap: 50px;
+}
+
+.form_conteudo{
+    display: flex;
+    gap: 50px;
+}
+
+.form_nome{
+    margin: 1.5rem 1.5rem 1.5rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form_contato{
+    margin: 1.5rem 1.5rem 0rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contato{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form_senha{
+    margin: 1.5rem 1.5rem 1.5rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.senha{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.campo_de_preenchimento{
+    width: 250px;
+    height: 20px;
+}
+
+.form_botao {
+    all: unset;
+    cursor: pointer;
+    outline: revert;
+    width: 50px;
+    height: 50px;
+    background-image: url('../assets/Icones/pokebola_fechada.png'); /* Imagem de fundo padrão */
+    background-size: contain; /* Ajuste o tamanho da imagem de fundo conforme necessário */
+    background-repeat: no-repeat; /* Impede a repetição da imagem de fundo */
+}
+
+.form_botao:hover {
+    background-image: url('../assets/Icones/pokebola_aberta.png'); /* Imagem de fundo no hover */
+}
+
+.pokebola{
+    width: 5%;
+}
 
 .rodape{
     padding: 15px;
-    color: #000;
+    color: var(--cor-preta);
     display: flex;
     background-color: var(--cor-do-bk-rodape);
     justify-content: space-around;
@@ -99,7 +174,7 @@ body{
     text-decoration: none;
     gap: 5px;
     text-align: center;
-    color: var(--cor-da-fonte-rodape);
+    color: var(--cor-preta);
 }
 
 .rodape_imgs{
