@@ -2,9 +2,11 @@
     /*header*/
     --cor-nome-da-pagina: yellow;
     --cor-da-fonte: white;
+    --cor-cabecalho: rgb(0, 0, 0, 0.51);
 
     /*body*/
     --cor-preta: #000000bf;
+    --cor-corpo-conteudo: rgb(92, 87, 87, 0.76);
 
     /*rodapé*/
     --cor-do-bk-rodape: rgba(114, 15, 18, 0.51);
@@ -33,7 +35,8 @@ body{
 .cabecalho_menu{
     display: flex;
     justify-content: space-between;
-    background-color: var(--cor-preta);
+    background-color: var(--cor-cabecalho);
+    
 }
 
 .cabecalho_titulo{
@@ -60,6 +63,11 @@ body{
     
 }
 
+.principal{
+    display: flex;
+    gap: 10rem;
+}
+
 .principal_links{
     display: flex;
     flex-direction: column;
@@ -80,12 +88,30 @@ body{
 }
 
 .principal_conteudo{
-    background-color: #000;
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    background-color: var(--cor-corpo-conteudo);
+    margin: 5% 5% 5% 0%;
+    border: 2px var(--cor-preta) solid;
+    border-radius: 5%;
+    
+}
+
+.principal_conteudo_apresentacao{
+    background-color: rgb(217, 217, 217, 0.25);
+    width: 127.929px;
+    height: 136px;
+    flex-shrink: 0;
+}
+
+.principal_itens{
+    width: 32px;
 }
 
 .rodape{
     padding: 15px;
-    color: #000;
+    color: var(--cor-preta);
     display: flex;
     background-color: var(--cor-do-bk-rodape);
     justify-content: space-around;
