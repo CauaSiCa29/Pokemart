@@ -87,7 +87,7 @@ body{
     color: aliceblue;
 }
 
-.principal_conteudo{
+/*.principal_conteudo{
     display: flex;
     justify-content: space-around;
     gap: 10px;
@@ -102,12 +102,14 @@ body{
     background-color: rgb(217, 217, 217, 0.25);
     width: 127.929px;
     height: 136px;
-    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .principal_itens{
     width: 32px;
-}
+}*/
 
 .rodape{
     padding: 15px;
